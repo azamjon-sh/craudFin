@@ -1,0 +1,19 @@
+/** Элементы **/
+@import "@/assets/fonts/stylesheet";
+@import "@/assets/scss/elements/button";
+@import "@/assets/scss/elements/links";
+
+
+/** Блоки **/
+@import "@/assets/scss/blocks/loginBlock";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Roboto',sans-serif;
+  color: #2B2B2B;
+}
