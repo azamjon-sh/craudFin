@@ -1,17 +1,19 @@
 <template>
-  <LoginComponent/>
+  <HomePage/>
 </template>
 
 
 <script>
-import LoginComponent from "@/components/LoginComponent";
+import LoginPage from "@/views/LoginPage";
+import HomePage from "@/views/HomePage";
 
 export default {
   data() {
     return {}
   },
   components: {
-    LoginComponent,
+    HomePage,
+    LoginPage,
   }
 }
 </script>
