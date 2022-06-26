@@ -2,10 +2,13 @@
 @import "@/assets/fonts/stylesheet";
 @import "@/assets/scss/elements/button";
 @import "@/assets/scss/elements/links";
-
+@import "@/assets/scss/elements/h";
 
 /** Блоки **/
 @import "@/assets/scss/blocks/loginBlock";
+@import "@/assets/scss/blocks/header";
+@import "@/assets/scss/blocks/intro";
+@import "@/assets/scss/blocks/projects";
 
 * {
   margin: 0;
@@ -14,6 +17,12 @@
 }
 
 body, html {
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #2B2B2B;
+}
+
+.row {
+  max-width: 1380px;
+  padding: 0 20px;
+  margin: 0 auto;
 }

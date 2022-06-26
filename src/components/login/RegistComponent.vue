@@ -27,7 +27,7 @@
 
     <button class="btn btn-blue btn-icon login__submit" @click="continueRegist">
       <span>Зарегистрироваться</span>
-      <img src="@/assets/img/arrow.svg" alt="">
+      <img src="@/assets/img/login/arrow.svg" alt="">
     </button>
 
     <div class="login__line"><span>Или</span></div>
