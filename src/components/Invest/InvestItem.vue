@@ -12,19 +12,35 @@
       </div>
     </div>
     <div class="project__body">
+
+      <h4 class="h4 project__name">
+        {{ item.name }}
+      </h4>
+
+      <div class="project__text">
+        {{ item.text }}
+      </div>
       <div class="project__top">
         <span class="project__type">
           {{ item.type }}
         </span>
-        <span class="project__price">
-          {{ item.price }}
-        </span>
       </div>
-      <h4 class="h4 project__name">
-        {{ item.name }}
-      </h4>
-      <div class="project__text">
-        {{ item.text }}
+      <div class="project__parameters">
+        <div class="project__target">
+          Цель<span>{{ item.target }} ₽</span>
+        </div>
+        <div class="project__target">
+          Собрано<span>{{ item.current }} ₽</span>
+        </div>
+        <div class="project__target">
+          Доля<span>{{ item.share }} %</span>
+        </div>
+      </div>
+      <div class="project__progress">
+        <div :style="'width:' + (item.current * 100 / item.target) + '%'"></div>
+      </div>
+      <div class="project__date">
+        Осталось 5 дней
       </div>
       <button class="btn btn-light-blue btn-icon project__btn">
         <span>Подробнее</span>
@@ -37,7 +53,7 @@
 <script>
 export default {
   props: ['item'],
-  name: "ProjectsItem",
+  name: "InvestItem",
   data() {
     return {
       active: false,

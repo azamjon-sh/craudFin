@@ -3,7 +3,11 @@
   <main class="main">
     <IntroComponent/>
     <ProjectsComponent/>
+    <QuestionsComponent/>
+    <InvestmentComponent/>
+    <QuestionsComponent/>
   </main>
+  <FooterComponent />
   <LoginPage v-if="loginModal" @closeLogin="loginClose"/>
 </template>
 
@@ -12,7 +16,9 @@ import HeaderComponent from "@/components/HeaderComponent";
 import LoginPage from "@/views/LoginPage";
 import IntroComponent from "@/components/IntroComponent";
 import ProjectsComponent from "@/components/ProjectsComponent";
-
+import QuestionsComponent from "@/components/QuestionsComponent";
+import InvestmentComponent from "@/components/InvestmentComponent";
+import FooterComponent from "@/components/FooterComponent";
 export default {
   name: "HomePage",
   data() {
@@ -29,7 +35,13 @@ export default {
     }
   },
   components: {
-    LoginPage, HeaderComponent, IntroComponent, ProjectsComponent
+    LoginPage,
+    HeaderComponent,
+    IntroComponent,
+    ProjectsComponent,
+    QuestionsComponent,
+    InvestmentComponent,
+    FooterComponent
   }
 }
 </script>

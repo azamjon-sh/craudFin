@@ -141,13 +141,71 @@
     height: auto;
   }
 }
-.projects__all{
+
+.projects__all {
   margin: 30px auto 0;
   max-width: 260px;
   padding: 0 24px;
-  span{
+
+  span {
     margin: 0 8px 0 0;
     font-size: 16px;
     line-height: 20px;
   }
+}
+
+.project__parameters {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 16px;
+}
+
+.project__target {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  color: #7D7D7D;
+  flex-basis: auto;
+
+  span {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2B2B2B;
+  }
+}
+
+.project__progress {
+  margin-top: 8px;
+  background: #E9EEF1;
+  border-radius: 8px;
+  height: 8px;
+  position: relative;
+
+  div {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #48B349;
+    border-radius: 8px;
+    display: inline-block;
+    height: 100%;
+  }
+}
+
+.invest {
+  .project__type {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.project__date {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #2B2B2B;
+  margin-top: 8px;
 }
